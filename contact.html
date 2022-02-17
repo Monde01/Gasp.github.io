@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <title></title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="page_header">
+        <h1>GASP!</h1>
+      </div>
+      <a href="contact.html"class="active">Contact</a>
+      <a href="event.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="artist.html">Featured Artists</a>
+      <a href="about.html">About</a>
+      <a href="home.html">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <h2>Contact Us</h2>
+    <h3> Have any suggestions? Want to be featured?</h3>
+    <h3>Let us know</h3>
+    <div class="container">
+      <form action="home.html">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="subject">Country</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject..">
+
+        <label for="message">Subject</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+      </form>
+    </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+  </body>
+</html>

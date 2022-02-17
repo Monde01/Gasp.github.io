@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <title></title>
+  </head>
+  <body>
+    <!--topnav bar-->
+    <div class="topnav" id="myTopnav">
+      <div class="page_header">
+        <h1>GASP!</h1>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="event.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="artist.html">Featured Artists</a>
+      <a href="about.html">About</a>
+      <a href="home.html" class="active">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="page_content">
+      <h2> Welcome to the World of Shock Art</h2>
+      <h3>A site dedicated for the disturbed who love disturbing pieces of art</h3>
+      <div class="row_banner_categories">
+        <div class="col1"><a href="artist.html"> <img src="images/MarcQuinn.jpg" alt="Featured Artist" width="196" height="262"></a>
+          <a class="hover"href="artist.html">Featured Artists</a>
+        </div>
+        <div class="col1"><a href="gallery.html"> <img src="images/GoyaShockArt.jpg" alt="Gallery" width="196" height="262"></a>
+          <a class="hover"href="gallery.html">Gallery</a>
+        </div>
+        <div class="col1"><a href="about.html"> <img src="images/urinal.jpg" alt="About Shock Art" width="196" height="262"></a>
+          <a class="hover"href="about.html">About Shock Art</a>
+        </div>
+        <div class="col1"><a href="event.html"> <img src="images/ArtShow.jpg" alt="Events" width="196" height="262"></a>
+          <a class="hover"href="event.html">Shocking Events</a>
+        </div>
+      </div>
+      <div class="contact_us">
+      <h3>Have any suggestions or questions?</h3>
+      <p>We'd love to here your feedback or any concerns you have for us</p>
+        <form action="contact.html">
+          <input type="submit" value="Contact Us">
+        </form>
+      </div>
+    </div>
+    </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+  </body>
+</html>
